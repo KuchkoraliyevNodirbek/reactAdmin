@@ -34,13 +34,7 @@ export const Header = () => {
       >
         <Link to={"/category"}>Category</Link>
       </div>
-      <div
-        className={`text-black p-4 m-4 border-2 rounded-[10px] ${getBorderStyle(
-          "/category-product"
-        )}`}
-      >
-        <Link to={"/category-product"}>CategoryProduct</Link>
-      </div>
+
       <div
         className={`text-black p-4 m-4 border-2 rounded-[10px] ${getBorderStyle(
           "/create-product"
@@ -48,13 +42,6 @@ export const Header = () => {
       >
         <Link to={"/create-product"}>CreateProduct</Link>
       </div>
-      <div
-        className={`text-black p-4 m-4 border-2 rounded-[10px] ${getBorderStyle(
-          "/single-product"
-        )}`}
-      >
-        <Link to={"/single-product"}>SingleProduct</Link>
       </div>
-    </div>
   );
 };

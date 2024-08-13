@@ -10,8 +10,9 @@ export const Login = () => {
 
   const submit = (data) => {
     mutate(data, {
-      onSuccess: (response) => {
-        saveState("user", { ...response.user, token: response.token });
+      onSuccess: (res) => {
+        console.log(res);
+        saveState("user", { ...res.user, token: res.accessToken });
         navigate("/");
       },
       onError: (error) => {

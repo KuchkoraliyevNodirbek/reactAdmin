@@ -1,6 +1,6 @@
 import React from "react";
 
-export const CategoryCard = ({ img, id, name, onDelete, onEdit }) => {
+export const SingleProductCard = ({ img, id, name, onDelete, onEdit }) => {
   return (
     <div className="border border-gray-300 rounded-lg shadow-md overflow-hidden">
       <img src={img} alt={name} className="w-full h-48 object-cover" />
